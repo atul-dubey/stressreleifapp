@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Admission prediction</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="slidecontainer">
+    <table class="mainTable" width="80%">
+      <colgroup>
+        <col class="twenty" />
+        <col />
+      </colgroup>
+      <tr>
+      <tr>
+        <td>Mean Temperature (Skin): <span id="valueTempMean"></span></td>
+        <td><input type="range" min="28" max="34" value="32.542" step="0.1" class="slider" id="sliderTempMean"></td>
+      </tr>
+
+      <tr>
+        <td>Std Mean Temperature (Skin): <span id="valueTempStd"></span></td>
+        <td><input type="range" min="0" max="3" value="1.076" step="0.1" class="slider" id="sliderTempStd"></td>
+      </tr>
+
+
+      <tr>
+        <td>Mean Electro Dermal Activity (EDA): <span id="valueEdaMean"></span></td>
+        <td><input type="range" min="0" max="23" value="11.343" step="0.1" class="slider" id="sliderEdaMean"></td>
+      </tr>
+
+      <tr>
+        <td>Std Electro Dermal Activity (EDA): <span id="valueEdaStd"></span></td>
+        <td><input type="range" min="0" max="4" value="1.947" step="0.1" class="slider" id="sliderEdaStd"></td>
+      </tr>
+
+
+      <tr>
+        <td>Mean Heart Rate: <span id="valueHrMean"></span></td>
+        <td><input type="range" min="80" max="100" value="84.839" step="0.1" class="slider" id="sliderHrMean"></td>
+      </tr>
+
+      <tr>
+        <td>Std Temp: <span id="valueHrStd"></span></td>
+        <td><input type="range" min="0" max="25" value="12.355" step="0.1" class="slider" id="sliderHrStd"></td>
+      </tr>
+
+
+      <tr>
+        <td>Mean IBI: <span id="valueIbiMean"></span></td>
+        <td><input type="range" min="120" max="1700" value="833.1753" step="0.1" class="slider" id="sliderIbiMean"></td>
+      </tr>
+
+      <tr>
+        <td>Std IBI: <span id="valueIbiStd"></span></td>
+        <td><input type="range" min="0" max="1100" value="549.955" step="0.1" class="slider" id="sliderIbiStd"></td>
+      </tr>
+
+
+      <tr>
+        <td>Mean BVP: <span id="valueBvpMean"></span></td>
+        <td><input type="range" min="-600" max="350" value="-85.186" step="0.1" class="slider" id="sliderBvpMean"></td>
+      </tr>
+
+      <tr>
+        <td>Std BVP: <span id="valueBvpStd"></span></td>
+        <td><input type="range" min="0" max="400" value="159.871" step="0.1" class="slider" id="sliderBvpStd"></td>
+      </tr>
+
+
+
+    </table>
+  </div>
+
+  <div class="prediction">
+    <center>
+      <p> Your Stress Prediction: <span id="valuePrediction" style="color:blue"></span> </p>
+    </center>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
